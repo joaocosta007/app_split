@@ -117,23 +117,22 @@
     const workoutPlan = {
       Domingo: {
         type: 'workout',
-        title: 'Peito (Foco Inferior) e Ombro (Anterior/Lateral)',
-        description: 'O dia de abrir a semana atacando suas prioridades absolutas com o tanque cheio.',
+        title: 'Push (Foco Peito Medial, Ombro e Tríceps 1)',
+        description: 'Foco no peitoral, ombros e tríceps com prioridade em estímulos de qualidade.',
         exercises: [
           {
-            name: 'Supino Declinado Articulado',
-            note: 'Substitui as paralelas com peso. Priorize execução pesada e controlada.',
-            sets: [
-              { name: 'Top Set', target: '6-8 rep.' },
-              { name: 'Back-off Set', target: '10-12 rep.' },
-            ],
-          },
-          {
-            name: 'Crossover Polia Alta (puxando para baixo)',
-            note: 'Até a falha, com parciais no final.',
+            name: 'Pec Deck (Voador) ou Crossover Polia Média',
+            note: 'Apertando 2 segundos no pico de contração para o miolo do peito.',
             sets: [
               { name: 'Working Set 1', target: '10-15 rep.' },
               { name: 'Working Set 2', target: '10-15 rep.' },
+            ],
+          },
+          {
+            name: 'Supino Reto (Máquina Articulada ou Halteres)',
+            sets: [
+              { name: 'Top Set', target: '6-8 rep.' },
+              { name: 'Back-off Set', target: '10-12 rep.' },
             ],
           },
           {
@@ -151,28 +150,36 @@
           },
           {
             name: 'Elevação Lateral no Cabo',
-            note: 'Falha total nas séries efetivas.',
+            note: 'Falha total.',
             sets: [
               { name: 'Working Set 1', target: '10-15 rep.' },
               { name: 'Working Set 2', target: '10-15 rep.' },
+            ],
+          },
+          {
+            name: 'Tríceps Pulley (Corda ou Barra V)',
+            note: 'Séries pesadas até a falha.',
+            sets: [
+              { name: 'Working Set 1', target: '10-12 rep.' },
+              { name: 'Working Set 2', target: '10-12 rep.' },
             ],
           },
         ],
       },
       Segunda: {
         type: 'workout',
-        title: 'Costas, Posterior de Ombro e Bíceps',
-        description: 'Construindo a espessura das costas e o aspecto 3D da parte de trás do ombro.',
+        title: 'Pull (Foco Dorsal, Posterior e Bíceps 1)',
+        description: 'Treino de puxar focando em dorsais, deltoide posterior e bíceps.',
         exercises: [
           {
-            name: 'Puxada Alta (Pegada Neutra ou Triângulo)',
+            name: 'Puxada Alta (Pegada Pronada Aberta)',
             sets: [
               { name: 'Top Set', target: '6-8 rep.' },
               { name: 'Back-off Set', target: '10-12 rep.' },
             ],
           },
           {
-            name: 'Remada Curvada ou Remada Máquina (Pegada Pronada)',
+            name: 'Remada Curvada ou Máquina (Pegada Neutra ou Supinada)',
             sets: [
               { name: 'Top Set', target: '6-8 rep.' },
               { name: 'Back-off Set', target: '10-12 rep.' },
@@ -180,7 +187,7 @@
           },
           {
             name: 'Pulldown com Corda',
-            note: 'Esprema a contração a cada repetição.',
+            note: 'Esprema a contração no final de cada repetição.',
             sets: [
               { name: 'Working Set 1', target: '10-15 rep.' },
               { name: 'Working Set 2', target: '10-15 rep.' },
@@ -205,11 +212,11 @@
       Terça: {
         type: 'workout',
         title: 'Pernas (Foco Quadríceps) e Panturrilha',
-        description: 'Treino rápido e de intensidade brutal antes do primeiro descanso.',
+        description: 'Foco na porção anterior das pernas e panturrilhas com alta intensidade.',
         exercises: [
           {
             name: 'Panturrilha em Pé (Máquina ou Smith)',
-            note: 'Segure 2 segundos no alongamento.',
+            note: 'Segure 2 segundos no alongamento máximo.',
             sets: [
               { name: 'Working Set 1', target: '10-15 rep.' },
               { name: 'Working Set 2', target: '10-15 rep.' },
@@ -233,7 +240,7 @@
           },
           {
             name: 'Agachamento Búlgaro (com Halteres)',
-            note: 'Levar à falha por perna.',
+            note: 'Levada à falha por perna.',
             sets: [
               { name: 'Top Set', target: '8-12 rep. por perna' },
             ],
@@ -248,21 +255,37 @@
       },
       Quinta: {
         type: 'workout',
-        title: 'Ombro (Foco Total) e Tríceps',
-        description: 'O segundo estímulo semanal focado exclusivamente na sua prioridade principal.',
+        title: 'Upper Touch-up, Ombro e Braços',
+        description: 'Sessão com volume um pouco mais alto, mas focada em isoladores e bombear sangue para os pontos fracos.',
         exercises: [
+          {
+            name: 'Crossover Polia Alta (puxando para baixo)',
+            note: 'Falha com parciais. (Touch-up Peito)',
+            sets: [
+              { name: 'Working Set 1', target: '10-15 rep.' },
+              { name: 'Working Set 2', target: '10-15 rep.' },
+            ],
+          },
+          {
+            name: 'Puxada Alta (Pegada Triângulo/Neutra)',
+            note: '(Touch-up Dorsal)',
+            sets: [
+              { name: 'Working Set 1', target: '8-12 rep.' },
+              { name: 'Working Set 2', target: '8-12 rep.' },
+            ],
+          },
+          {
+            name: 'Desenvolvimento com Halteres',
+            note: 'Série pesada até a falha.',
+            sets: [
+              { name: 'Working Set', target: '8-10 rep.' },
+            ],
+          },
           {
             name: 'Elevação Lateral com Halteres',
             sets: [
               { name: 'Top Set', target: '8-12 rep.' },
               { name: 'Back-off Set', target: '12-15 rep.' },
-            ],
-          },
-          {
-            name: 'Desenvolvimento com Halteres',
-            note: 'Falha na série efetiva.',
-            sets: [
-              { name: 'Working Set', target: '8-10 rep.' },
             ],
           },
           {
@@ -279,7 +302,23 @@
             ],
           },
           {
-            name: 'Tríceps Pulley (Corda ou Barra V)',
+            name: 'Tríceps Francês (Cabo ou Halter)',
+            note: 'Falha no alongamento.',
+            sets: [
+              { name: 'Working Set 1', target: '10-12 rep.' },
+              { name: 'Working Set 2', target: '10-12 rep.' },
+            ],
+          },
+          {
+            name: 'Rosca Inclinada com Halteres (banco 45º)',
+            sets: [
+              { name: 'Top Set', target: '8-10 rep.' },
+              { name: 'Back-off Set', target: '10-12 rep.' },
+            ],
+          },
+          {
+            name: 'Rosca Martelo (Halteres ou Corda)',
+            note: 'Foco em construir o braquial.',
             sets: [
               { name: 'Working Set 1', target: '10-12 rep.' },
               { name: 'Working Set 2', target: '10-12 rep.' },
@@ -290,7 +329,7 @@
       Sexta: {
         type: 'workout',
         title: 'Pernas (Foco Posterior) e Panturrilha',
-        description: 'Fechando a semana equilibrando a musculatura da perna para evitar lesões.',
+        description: 'Foco na cadeia posterior das pernas para equilibrar a musculatura e prevenir lesões.',
         exercises: [
           {
             name: 'Mesa Flexora',
@@ -315,7 +354,7 @@
           },
           {
             name: 'Panturrilha Sentado (Gêmeos)',
-            note: 'Working sets pesadas.',
+            note: 'Séries pesadas.',
             sets: [
               { name: 'Working Set 1', target: '10-15 rep.' },
               { name: 'Working Set 2', target: '10-15 rep.' },
@@ -325,7 +364,7 @@
       },
       Sábado: {
         type: 'rest',
-        title: 'Descanso Total (Academia Fechada)',
+        title: 'Descanso Total',
         description: 'Aproveite para focar na dieta e desligar totalmente do ferro.',
         exercises: [],
       },
